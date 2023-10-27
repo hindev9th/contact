@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-info">
+            <form action="https://boiduong.online/test.php" id="form-data" method="post">
+                <div class="name">
+                    <div>
+                        <input type="text" name="ho" id="ho" minlength="2" required placeholder="Họ đệm...">
+                    </div>
+                    <div>
+                        <input type="text" name="ten" id="ten" minlength="2" required placeholder="Tên...">
+                    </div>
+                </div>
+                <div>
+                    <input type="date" name="ngay-sinh" max="2020-12-25" id="ngay-sinh" required>
+                </div>
+                <div>
+                    <input type="number" name="sdt" id="sdt" minlength="10" maxlength="10" placeholder="Số điện thoại.."
+                        required>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email.." required>
+                </div>
+                <div>
+                    <input type="text" name="title" id="title" placeholder="Tiêu đề...">
+                </div>
+                <div>
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="Nội dung..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="btn-send">Gửi</button>
+                </div>
+            </form>
+            <div class="result">
+                <h1 class="title">Thông tin</h1>
+                <div class="text">
+                    <div>
+                        <div>
+                            <h4>Họ : <span id="tt-ho"></span></h4>
+                        </div>
+                        <div>
+                            <h4>Tên :<span id="tt-ten"></span></h4>
+                        </div>
+                    </div>
+                    <h4>Họ tên đầy đủ :<span id="tt-fullname"></span> </h4>
+                    <h4>Ngày sinh dương :<span id="tt-ngay-sinh-duong"></span></h4>
+                    <h4>Ngày sinh âm :<span id="tt-ngay-sinh-am"></span></h4>
+                    <h4>Mệnh :<span id="tt-menh"></span></h4>
+                    <h4>Số điện thoại :<span id="tt-sdt"></span></h4>
+                    <h4>Email :<span id="tt-email"></span></h4>
+                    <h4>Tiêu đề :<span id="tt-title"></span></h4>
+                    <h4>Nội dung :<span id="tt-content"></span></h4>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <h1>Kết quả</h1>
+            <div class="list-info">
+                <div id="hop-menh">
+                    <h3>Hợp mệnh</h3>
+                    <ul id="list-hm">
+                    </ul>
+                </div>
+                <div id="cung-thang">
+                    <h3>Cùng tháng</h3>
+                    <ul id="list-ct">
+                    </ul>
+                </div>
+                <div id="cung-quy">
+                    <h3>Cùng quý</h3>
+                    <ul id="list-cq">
+                    </ul>
+                </div>
+                <div id="cung-nam">
+                    <h3>Cùng năm</h3>
+                    <ul id="list-cn">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/lunar.js"></script> -->
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/moment-lunar.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+input,
+input:focus,
+input:focus-visible,
+textarea,
+textarea:focus,
+textarea:focus-visible {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+label {
+    padding: 5px 0;
+}
+
+.container .form-info {
+    display: flex;
+}
+
+.container .form-info form {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/2);
+    padding: 15px;
+
+}
+
+.container .form-info form div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.container .form-info form div.name {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.container .form-info form div.name>div {
+    width: calc(100% / 2 - 15px);
+}
+
+button {
+    border: 1px solid #00000038;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.result {
+    width: calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    background: #f3f3f3;
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+}
+
+.result h1 {
+    text-align: center;
+}
+
+.result .text {
+    height: 100%;
+    padding: 20px;
+}
+
+.result .text>div {
+    display: flex;
+    gap: 15px;
+}
+
+.result .text>div>div {
+    width: calc(100% / 2 - 15px);
+}
+
+.result .text>div>div>h4 {
+    margin: 0;
+}
+
+.result .text span {
+    font-weight: 500;
+}
+
+.results {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f3f3f3;
+    border-radius: 15px;
+}
+
+.results h1 {
+    text-align: center;
+}
+
+.results .list-info {
+    display: flex;
+
+}
+
+.results .list-info>div {
+    width: calc(100%/4);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #00000038;
+    border-radius: 15px;
+}
+
+.results h3 {
+    text-align: center;
+}
+
+.results ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.results ul li {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
